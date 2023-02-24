@@ -288,6 +288,7 @@
   <distributionManagement>
     <repository>
       <id>artifact-repository</id>
+      <!-- Terrible idea but makes it practical to demonstrate this deployment setup -->
       <url>file://${user.home}/.m2/repository-local-releases</url>
     </repository>
   </distributionManagement>
