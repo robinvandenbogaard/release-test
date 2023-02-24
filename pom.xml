@@ -31,6 +31,12 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
 
+  <scm>
+    <connection>scm:git:https://github.com/robinvandenbogaard/release-test.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:robinvandenbogaard/release-test.git</developerConnection>
+    <url>https://github.com/robinvandenbogaard/release-test.git</url>
+  </scm>
+
   <name>My OSS Project</name>
   <description>My Latest OSS Project</description>
   <inceptionYear>2021</inceptionYear>
@@ -249,4 +255,11 @@
       </properties>
     </profile>
   </profiles>
+
+  <distributionManagement>
+    <repository>
+      <id>artifact-repository</id>
+      <url>file://${user.home}/.m2/repository-local-releases</url>
+    </repository>
+  </distributionManagement>
 </project>
